@@ -18,24 +18,21 @@
     padding: 1.5rem 2rem;
     box-shadow: 0 4px 6px rgb(237,237,237);
     z-index: 100;
-
     &-logoDiv img{
         width: 100px;
         height: auto;
     }    
-
     &-logoDiv{
         .logo{
             width: 25px;
         }
     }
-
     @media screen and (max-width:768px) {
         .navbar{
             position: absolute;
             background-color: var(--secondryColor);
             width: 80%;
-            top: 7rem;
+            top: -100%;
             right: 50%;
             left: 50%;
             transform: translate(-50%);
@@ -88,10 +85,8 @@
                 color:  red;
             }
         }
-    }
-    
+    }   
 }
-
 .navbar{
     &-menu{
         display: flex;
@@ -104,6 +99,27 @@
             cursor: pointer;
         }
     }
+    .signUp{
+        gap : 0.5 rem ;
+        .text{
+            padding: 3px 10px;
+            background: var(--primaryColor);
+            border-radius: 3px ;
+            color: var(--whiteColor);
+            cursor: pointer;
+             
+        }
+        .toggleNavbar{
+            background-color: none;
+            color: var(--primaryColor);
+            font-weight: 600;
+            font-size: 25px;
+        }   
+    }
+    // .showNavbar{
+    //     top: 7rem;
+    //     transition: 0.5s ease;
+    // }
 }
 
 // .flex{

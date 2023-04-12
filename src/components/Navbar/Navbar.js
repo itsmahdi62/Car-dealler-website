@@ -31,7 +31,7 @@ const Navbar = () => {
      <div className='signUp flex'>
         <div className='text'>Sign Up</div>
         {/*=============================== add icons to navbar for show sign-up ============================== */}
-        <TbGridDots />
+        <TbGridDots className='toggleNavbar' />
      </div>
     </div> );
 }
