@@ -1,0 +1,131 @@
+// default colors 
+:root{
+    --primaryColor:#7a63f1;
+    --blackColor: black;
+    --secondryColor:  #dad9df;
+    --whiteColor: white ;
+   }
+
+// ****** styles ******
+.header{
+    display: flex;
+    background-color: rgb(98, 50, 110);
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+    color: white;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 4px 6px rgb(237,237,237);
+    z-index: 100;
+
+    &-logoDiv img{
+        width: 100px;
+        height: auto;
+    }    
+
+    &-logoDiv{
+        .logo{
+            width: 25px;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        .navbar{
+            position: absolute;
+            background-color: var(--secondryColor);
+            width: 80%;
+            top: 7rem;
+            right: 50%;
+            left: 50%;
+            transform: translate(-50%);
+            border-radius: 10px;
+            text-align: center;
+            padding: 2rem;
+            transition:  0.3s ease;
+            z-index: 1000;
+            
+            &-menu{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                &-item{
+                    padding:  0.5rem 1rem;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: 0.3 ease;
+
+                    a{
+                        font-size: 15px;
+
+                    }
+                    &:hover{
+                        background: var(--primaryColor);
+                        color: var(--whiteColor);
+                        transition: 0.3 ease;
+                    }
+                    &:hover a{
+                        background: var(--primaryColor);
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        } 
+
+        .navbar-icon{
+            position: absolute;
+            bottom:  -15px;
+            right: 50%;
+            left: 50%;
+            transform: translate(-50%);
+            background: var(--secondryColor);
+            color: var(--primaryColor);
+            padding: 3px;
+            border-radius: 50%;
+            font-size: 35px;
+            &:hover{
+                color:  red;
+            }
+        }
+    }
+    
+}
+
+.navbar{
+    &-menu{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        &-item a{
+            margin: 0 5px;
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+// .flex{
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     &>*{
+//         margin: 0 10px;
+//     }
+// }
+// @media(max-width:500px){
+//     .navbar{
+//         position: absolute;
+//         width: 80%;
+//         top:7rem;
+//         right: 50%;
+//         left: 50%;
+//         transform: translate(-50%);
+//         border-radius: 10px;
+//         text-align: center;
+//         padding: 2rem;
+//         transition: 0.3s ease;
+//         z-index: 200;
+//     }
+// }

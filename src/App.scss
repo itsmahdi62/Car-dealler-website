@@ -6,4 +6,24 @@
   transition: 0.2s ease-in-out ;
   font-family: 'Titillium Web', sans-serif ;
 }
- 
+ // default style
+ :root{
+  --primaryColor:#7a63f1;
+  --blackColor: black;
+  --secondryColor:  #dad9df;
+ }
+.primaryBtn{
+  background-color: var(--primaryColor);
+}
+
+.btn{
+  border:none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--blackColor);
+  &:hover{
+    background-color: var(--secondryColor);
+  }
+}
