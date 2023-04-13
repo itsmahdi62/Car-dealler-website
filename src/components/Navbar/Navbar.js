@@ -1,17 +1,28 @@
 import {IoIosCloseCircle} from 'react-icons/io'
 import {TbGridDots} from 'react-icons/tb'
+import { useState } from 'react'
 import "./Navbar.scss"
 //================== import images ================================
 import logo from "../../asset/download.png"
 const Navbar = () => {
+
+    //statment to toggle navbar items in small sizes
+    const [navbar , setNavbar] = useState('navbar')
+
+    // function to handel navar
+
+    const showNavbarHandler = ()=>{
+        setNavbar('navbar showNavbar')
+    }
+
     return ( <div className="header">
      <div className="header-logoDiv">
         <img src={logo} alt="" className="logo" />
      </div>
 
     {/* ==========================the menuBar and it's options====================== */}
-     <div className="navbar">
-        <ul className="navbar-menu">
+     <div className={navbar}>
+        <ul className="navbar-menu ">
             <li className="navbar-menu-item">
                 <a href="/#" className="link">Used Cars</a>
             </li>
@@ -31,7 +42,7 @@ const Navbar = () => {
      <div className='signUp flex'>
         <div className='text'>Sign Up</div>
         {/*=============================== add icons to navbar for show sign-up ============================== */}
-        <TbGridDots className='toggleNavbar' />
+        <TbGridDots className='toggleNavbar' onClick={showNavbarHandler}/>
      </div>
     </div> );
 }

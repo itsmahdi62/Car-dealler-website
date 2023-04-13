@@ -3,24 +3,28 @@
     --primaryColor:#7a63f1;
     --blackColor: black;
     --secondryColor:  #dad9df;
-    --whiteColor: white ;
+    --textColor: #a3a3a3;
+    --greyColor:#f4f4f4;
+    --whiteColor:#f5f4fa;
+    --blackColor:#434344;
    }
 
 // ****** styles ******
 .header{
+    position: fixed;
     display: flex;
-    background-color: rgb(98, 50, 110);
+    background-color:var(--whiteColor);
     align-items: center;
-    justify-content: space-evenly;
-    font-size: 20px;
-    color: white;
+    justify-content: space-between;
     width: 100%;
     padding: 1.5rem 2rem;
     box-shadow: 0 4px 6px rgb(237,237,237);
-    z-index: 100;
-    &-logoDiv img{
+    z-index: 1000;
+    &-logoDiv {
+       .logo{
         width: 100px;
         height: auto;
+       }
     }    
     &-logoDiv{
         .logo{
@@ -116,10 +120,10 @@
             font-size: 25px;
         }   
     }
-    // .showNavbar{
-    //     top: 7rem;
-    //     transition: 0.5s ease;
-    // }
+    .showNavbar{
+        top: 7rem;
+        transition: 0.5s ease;
+    }
 }
 
 // .flex{
