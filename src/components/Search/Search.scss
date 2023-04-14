@@ -1,0 +1,48 @@
+:root{
+    --primaryColor:#7a63f1;
+    --blackColor: black;
+    --secondryColor:  #dad9df;
+    --textColor: #a3a3a3;
+    --greyColor:#f4f4f4;
+    --whiteColor:#f5f4fa;
+    --blackColor:#434344;
+}
+
+.search{
+    padding: 2rem 0;
+    .title{
+        color: var(--blackColor);
+        font-size: 22px;
+        padding: 1rem 0;
+        text-align: center;
+        font-weight: 700;
+        line-height: 1.7rem;
+    }   
+        .searchDiv{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2px 10px;
+            flex-wrap: wrap;
+            &>*{
+                margin: 10px ;
+                width: 40%;
+                border-radius: 10px;
+                padding: 5px 10px;
+                outline: none;
+                border: 0.2px solid --blackColor;
+                &:focus{
+                    border: none;
+                    border: 1px solid --primaryColor;
+                }
+            }
+        .icon{
+            font-size: 15px;
+        }
+        .btn{
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+        }
+    }
+}

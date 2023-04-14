@@ -1,7 +1,7 @@
 // default colors 
 :root{
     --primaryColor:#7a63f1;
-    --blackColor: black;
+    --blackColor: #434344;
     --secondryColor:  #dad9df;
     --textColor: #a3a3a3;
     --greyColor:#f4f4f4;
@@ -20,38 +20,50 @@
     padding: 1.5rem 2rem;
     box-shadow: 0 4px 6px rgb(237,237,237);
     z-index: 1000;
-    &-logoDiv {
+    .logoDiv {
        .logo{
         width: 100px;
         height: auto;
        }
     }    
-    &-logoDiv{
-        .logo{
-            width: 25px;
-        }
-    }
+//**** don't need to change ****
     @media screen and (max-width:768px) {
         .navbar{
             position: absolute;
             background-color: var(--secondryColor);
             width: 80%;
-            top: -100%;
+            top: -250%;
             right: 50%;
             left: 50%;
             transform: translate(-50%);
-            border-radius: 10px;
+            border-radius: 10px; 
             text-align: center;
             padding: 2rem;
             transition:  0.3s ease;
-            z-index: 1000;
-            
-            &-menu{
+            z-index: 2000;
+
+            .closeIcon{
+                position: absolute;
+                bottom:  -15px;
+                right: 50%;
+                left: 50%;
+                transform: translate(-50%);
+                background: var(--secondryColor);
+                color: var(--primaryColor);
+                padding: 3px;
+                border-radius: 50%;
+                font-size: 35px;
+                &:hover{
+                color:  red;
+              
+            }
+            }
+            .menu{
                 display: flex;
                 align-items: center;
                 flex-direction: column;
 
-                &-item{
+                .listItem{
                     padding:  0.5rem 1rem;
                     border-radius: 10px;
                     cursor: pointer;
@@ -59,7 +71,6 @@
 
                     a{
                         font-size: 15px;
-
                     }
                     &:hover{
                         background: var(--primaryColor);
@@ -73,36 +84,15 @@
                 }
             }
         } 
-
+        .showNavbar{
+            top: 12rem;
+            transition: 0.8s ease;
+        }
         .navbar-icon{
-            position: absolute;
-            bottom:  -15px;
-            right: 50%;
-            left: 50%;
-            transform: translate(-50%);
-            background: var(--secondryColor);
-            color: var(--primaryColor);
-            padding: 3px;
-            border-radius: 50%;
-            font-size: 35px;
-            &:hover{
-                color:  red;
-            }
+            
         }
     }   
-}
-.navbar{
-    &-menu{
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        &-item a{
-            margin: 0 5px;
-            text-decoration: none;
-            color: white;
-            cursor: pointer;
-        }
-    }
+// * * * * * * * * * * * * * * * * 
     .signUp{
         gap : 0.5 rem ;
         .text{
@@ -111,7 +101,10 @@
             border-radius: 3px ;
             color: var(--whiteColor);
             cursor: pointer;
-             
+            &:hover{
+                background-color: var(--secondryColor);
+                color: var(--blackColor);
+            }
         }
         .toggleNavbar{
             background-color: none;
@@ -120,32 +113,5 @@
             font-size: 25px;
         }   
     }
-    .showNavbar{
-        top: 7rem;
-        transition: 0.5s ease;
-    }
 }
 
-// .flex{
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     &>*{
-//         margin: 0 10px;
-//     }
-// }
-// @media(max-width:500px){
-//     .navbar{
-//         position: absolute;
-//         width: 80%;
-//         top:7rem;
-//         right: 50%;
-//         left: 50%;
-//         transform: translate(-50%);
-//         border-radius: 10px;
-//         text-align: center;
-//         padding: 2rem;
-//         transition: 0.3s ease;
-//         z-index: 200;
-//     }
-// }

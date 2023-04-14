@@ -8,36 +8,39 @@ const Navbar = () => {
 
     //statment to toggle navbar items in small sizes
     const [navbar , setNavbar] = useState('navbar')
-
-    // function to handel navar
-
+    // function to handel navbar (show) in small sizes
     const showNavbarHandler = ()=>{
         setNavbar('navbar showNavbar')
     }
 
+    // function to handel navar (hide) in small sizes
+    const removeNavbarHandler = ()=>{
+        setNavbar('navbar')
+    }
+    
     return ( <div className="header">
-     <div className="header-logoDiv">
+     <div className="logoDiv">
         <img src={logo} alt="" className="logo" />
      </div>
 
     {/* ==========================the menuBar and it's options====================== */}
      <div className={navbar}>
-        <ul className="navbar-menu ">
-            <li className="navbar-menu-item">
+        <ul className="menu">
+            <li className="listItem">
                 <a href="/#" className="link">Used Cars</a>
             </li>
-            <li className="navbar-menu-item">
+            <li className="listItem">
                 <a href="/#" className="link">New Cars</a>
             </li>
-            <li className="navbar-menu-item">
+            <li className="listItem">
                 <a href="/#" className="link">Auctions</a>
             </li>
-            <li className="navbar-menu-item">
+            <li className="listItem">
                 <a href="/#" className="link">Sell</a>
             </li>
         </ul>
         {/*=============================== add icons to navbar for exit ============================== */}
-        <IoIosCloseCircle className='navbar-icon' />
+        <IoIosCloseCircle className='closeIcon' onClick={removeNavbarHandler}/>
      </div>
      <div className='signUp flex'>
         <div className='text'>Sign Up</div>

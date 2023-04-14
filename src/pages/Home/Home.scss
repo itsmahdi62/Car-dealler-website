@@ -1,9 +1,11 @@
 :root{
     --primaryColor:#7a63f1;
-    --blackColor: #0e0d13;
-    --secondryColor:  #ebe8fc;
-    --textColor:#a3a3a3;
-    --greyColor: #ebe8fc;
+  --blackColor: black;
+  --secondryColor:  #dad9df;
+  --textColor: #a3a3a3;
+  --greyColor:#f4f4f4;
+  --whiteColor:#f5f4fa;
+  --blackColor:#434344;
    }
    .home{
     padding-top: 8rem;
@@ -13,8 +15,8 @@
     text-align: center;
     display: grid;
     gap: 2rem;
-
-    &Text{
+    
+    .homeText{
         .homeSpan{
             font-size: 30px;
             color: var(--textColor );
@@ -26,7 +28,6 @@
             font-size: 30px;
             color: var(--blackColor );
             font-weight: 700;
-            font-size: 15px;
         }
         .btns{
             gap: 1.5rem;
@@ -39,34 +40,24 @@
                 font-size: 12px;
                 &:hover{
                     background: var(--primaryColor);
-                    color: white;
+                    color: var(--whiteColor);
                 }                
             }
             .btn:nth-child(1){
-                background: white;
+                background: var(--whiteColor);
                 color: var(--textColor);
+                font-weight: 800;
                 &:hover{
                     background: var(--primaryColor);
                 }
             }
-
-            .btn{
-                padding: 10px 15px;
-                border-radius: 3px;
-                font-weight: 600;
-                margin-top: 0.5 rem;
-                font-size: 12px;
-                &:hover{
-                    background: var(--primaryColor);
-                    color: white;
-                }                
-            }
-            .btn:nth-child(1){
+            .btn:nth-child(2){
                 &:hover{
                     background: white;
                     color: var(--textColor);
                 }
             }
+            
 
         }
     }
