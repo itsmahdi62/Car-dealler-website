@@ -22,8 +22,8 @@
     z-index: 1000;
     .logoDiv {
        .logo{
-        width: 100px;
-        height: auto;
+        width: 45px;
+        height: 45px;
        }
     }    
 //**** don't need to change ****
@@ -88,13 +88,10 @@
             top: 12rem;
             transition: 0.8s ease;
         }
-        .navbar-icon{
-            
-        }
     }   
 // * * * * * * * * * * * * * * * * 
     .signUp{
-        gap : 0.5 rem ;
+        gap : 1rem ;
         .text{
             padding: 3px 10px;
             background: var(--primaryColor);
