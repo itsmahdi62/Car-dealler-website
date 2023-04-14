@@ -18,7 +18,22 @@ const Navbar = () => {
         setNavbar('navbar')
     }
     
-    return ( <div className="header">
+    // function to add a background for navbar when we scroll a certain eight of the window
+    const [header , setHeader] = useState('header')
+    const addBg = () =>{
+        if(window.scrollY >= 20){
+            setHeader('header addBg')
+        }
+    }
+    const removeBg = () =>{
+        if(window.scrollY < 20){
+            setHeader('header')
+        }
+    }
+    window.addEventListener('scroll', addBg)
+    window.addEventListener('scroll', removeBg)
+
+    return ( <div className={header} >
      <div className="logoDiv">
         <img src={logo} alt="" className="logo" />
      </div>
