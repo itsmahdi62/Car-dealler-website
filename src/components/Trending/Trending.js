@@ -3,16 +3,25 @@ import {BsArrowLeftShort , BsArrowRightShort} from "react-icons/bs"
 // import { useEffect } from "react";
 // import axios from "axios";
 import defaultImage from "../../asset/homeImg.png"
+ import {useEffect} from 'react'
+import Aos from "aos"
+import 'aos/dist/aos.css'
 
 const Trending = () => {
-    
+      useEffect(() =>{
+        Aos.init(
+            {
+                duration: 2000
+            }
+        )
+    }, [])
     // useEffect(() => {
 
     // },[])
     return (
-    <div className="trending">
+    <div  className="trending">
         <div className="secContainer container">
-            <div className="secHeading flex">
+            <div data-aos='fade-up' className="secHeading flex">
               <h3 className="secTitle">
                 Trending Near you
               </h3>
@@ -24,7 +33,7 @@ const Trending = () => {
 
             <div className="carContainer grid">
                 {/* Single Car Div */}
-                <div className="singleCar grid">
+                <div data-aos='fade-up' className="singleCar grid">
                     <div className="imgDiv">
                         <img src={defaultImage} alt="Car Image" />
                     </div>
@@ -48,7 +57,7 @@ const Trending = () => {
                     </div>
                 </div>
                 {/* Single Car Div */}
-                <div className="singleCar grid">
+                <div data-aos='fade-up' className="singleCar grid">
                     <div className="imgDiv">
                         <img src={defaultImage} alt="Car Image" />
                     </div>
@@ -72,7 +81,7 @@ const Trending = () => {
                     </div>
                 </div>
                 {/* Single Car Div */}
-                <div className="singleCar grid">
+                <div data-aos='fade-up' className="singleCar grid">
                     <div className="imgDiv">
                         <img src={defaultImage} alt="Car Image" />
                     </div>
