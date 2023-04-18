@@ -52,3 +52,54 @@
         }
     }
 }
+
+@media screen and (min-width:520px) {
+    .search{
+        .title{
+            font-size: 25px;
+            padding: 2rem 0;
+        }
+
+        .searchDiv{
+            input{
+                padding: 10px;
+                font-weight: 600;
+                color: var(--primaryColor);
+            }
+            .btn{
+                justify-content: center;
+                width: 100%;
+                align-items: center;
+                gap: 0.3rem;
+                font-size: 18px;
+
+                .icon{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:770px) {
+    .search{
+        .title{
+            font-size: 30px;
+            padding: 2rem 0;
+        }
+
+        .searchDiv{
+        }
+    }
+}
+
+@media screen and (min-width:1064px) {
+    .search{
+        width: 80%;
+        margin: auto;
+        .title{
+            font-size: 30px;
+            padding: 2rem 0;
+        }
+    }
+}
