@@ -180,7 +180,7 @@
 }
 @media screen and (min-width:1064px) {
     .header{
-
+        padding: 2rem  7rem;
         .navbar{
             .menu{
                 .listItem{
@@ -200,7 +200,19 @@
     } 
 
 }
-
-@media screen and (min-width:1064px) {
-    
+@media screen and (min-width:1400px) {
+    .header{
+        .navbar{
+            .menu{
+                .listItem{
+                  margin: 0 0.8rem;
+                }
+            }
+        }
+        .signUp{
+            .text{
+                font-size: 18px;
+            }      
+        }
+    } 
 }
