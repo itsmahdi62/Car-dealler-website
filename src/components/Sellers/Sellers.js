@@ -13,7 +13,7 @@ const Seller = () => {
                 </p>
             </div>
 
-            <div className="sellersContainer">
+            <div className="sellersContainer grid">
                 {/* Single seller */}
                 <div className="singleSeller flex">
                     <div className="imgDiv flex">

@@ -54,3 +54,43 @@
         }
     }
 }
+
+@media screen and (min-width:520px){
+    .seller{
+        .secContainer{
+            .secHeading{
+                margin-top: 2rem;
+                .secTitle{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+
+            .sellersContainer{
+                gap: 1.5rem;
+
+                .singleSeller{
+                    gap: 1.5rem;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width:840px){
+    .seller{
+        .secContainer{
+            .secHeading{
+                .secTitle{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
