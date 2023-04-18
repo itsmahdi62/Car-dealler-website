@@ -116,3 +116,91 @@
     background-color: var(--secondryColor) ;
     box-shadow: none;
 }
+
+// first step to make website responsive
+@media screen and (min-width:520px) {
+    .header{
+        .logoDiv{
+            img{
+                width: 30px;
+            }
+        }
+
+        .signUp{
+            .text{
+                padding: 6px;
+                font-size: 16px;
+            }
+            .toggleNavbarIcon{
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:770px) {
+    .header{
+        .navbar{
+            .closeIcon{
+                display: none;
+            }
+            .menu{
+                display: flex;
+                flex-direction: row;
+
+                .listItem{
+                    padding: 0.3rem 1rem;
+                    border-radius: 3px;
+
+                    a{
+                        color: var(--textColor);
+                        font-size: 15px;
+                    }
+                    &:hover{
+                        background-color: var(--primaryColor);
+                        color: var(--whiteColor);
+                        transition: 0.3 ease;
+                    }
+                    &:hover a{
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+
+        .signUp{
+            .text{
+                padding: 6px 10px;
+            }
+            .toggleNavbarIcon{
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (min-width:1064px) {
+    .header{
+
+        .navbar{
+            .menu{
+                .listItem{
+                    a{
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+        .signUp{
+            .text{
+                font-size: 18px;
+            }
+
+            
+        }
+    } 
+
+}
+
+@media screen and (min-width:1064px) {
+    
+}
