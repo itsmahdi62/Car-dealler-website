@@ -29,6 +29,7 @@
             }
         }
         .carContainer{
+
             gap: 2rem;
             .singleCar{
                 transition: 0.3 ease-in-out;
@@ -140,7 +141,9 @@
             }   
 
             .carContainer{
-                
+                grid-template-columns: repeat((2,1fr));
+
+                margin-bottom: 1rem;
             }
         }
     }

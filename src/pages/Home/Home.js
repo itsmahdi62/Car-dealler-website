@@ -1,4 +1,6 @@
 import "../../App.scss"
+import {useEffect} from 'react'
+import Aos from "aos"
 import "./Home.scss"
 import homeIamge from "../../asset/homeImg.png"
 const Home = () => {
