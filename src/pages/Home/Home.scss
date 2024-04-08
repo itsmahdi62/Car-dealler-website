@@ -1,134 +1,95 @@
-:root{
-    --primaryColor:#7a63f1;
+:root {
+  --primaryColor: #7a63f1;
   --blackColor: black;
-  --secondryColor:  #dad9df;
+  --secondryColor: #dad9df;
   --textColor: #a3a3a3;
-  --greyColor:#f4f4f4;
-  --whiteColor:#f5f4fa;
-  --blackColor:#434344;
-   }
-   .home{
-    padding-top: 8rem;
-   }
-   .Container{
-    padding:  0 1.5rem;
-    text-align: center;
-    display: grid;
-    gap: 2rem;
-    
-    .homeText{
-        .homeSpan{
-            font-size: 30px;
-            color: var(--textColor );
-            font-weight: 400;
-            font-size: 15px;
-        }
-
-         .homeTitle{
-            font-size: 30px;
-            color: var(--blackColor );
-            font-weight: 700;
-        }
-        .btns{
-            gap: 1.5rem;
-            justify-content: center;
-            .btn{
-                padding: 10px 15px;
-                border-radius: 3px;
-                font-weight: 600;
-                margin-top: 0.5 rem;
-                font-size: 12px;
-                &:hover{
-                    background: var(--primaryColor);
-                    color: var(--whiteColor);
-                }                
-            }
-            .btn:nth-child(1){
-                background: var(--whiteColor);
-                color: var(--textColor);
-                font-weight: 800;
-                &:hover{
-                    background: var(--primaryColor);
-                }
-            }
-            .btn:nth-child(2){
-                &:hover{
-                    background: white;
-                    color: var(--textColor);
-                }
-            }
-        }
+  --greyColor: #f4f4f4;
+  --whiteColor: #f5f4fa;
+  --blackColor: #434344;
+}
+.home {
+  padding-top: 8rem;
+}
+.Container {
+  padding: 0 4rem;
+  text-align: center;
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+  .homeText {
+    margin-top: 1rem;
+    .homeSpan {
+      font-size: 40px;
+      color: var(--textColor);
+      font-weight: 500;
+      font-size: 15px;
+      margin: 2rem;
     }
 
-    .homeImage{
-        margin: auto;
-        
+    .homeTitle {
+      font-size: 45px;
+      color: var(--blackColor);
+      font-weight: 700;
+      margin-bottom: 2rem;
     }
-   }
-
- //make it responsive and condition for desktop
- @media screen and (min-width:520px) {
-    .hone{
-        .secContainer{
-            .homeText{
-                .homeSpan{
-                   font-size: 18px;
-                }
-                .homeTitle{
-                    font-size: 35px;
-                }
-                .btns{
-                    .btn{
-                        font-size: 14px;
-                    }
-                }
-            }
-            .homeImage{
-                max-width: 85%;
-            }
+    .btns {
+      gap: 1.5rem;
+      justify-content: center;
+      .btn {
+        padding: 15px 22px;
+        border-radius: 3px;
+        font-weight: 800;
+        margin-top: 0.5 rem;
+        font-size: 12px;
+        &:hover {
+          background: var(--primaryColor);
+          color: var(--whiteColor);
         }
-     }  
- }
-
- @media screen and (min-width:720px) {
-    .hone{
-        padding-top: 10rem;
-        .secContainer{
-            gap:2rem;
-            .homeText{
-                .homeSpan{
-                   font-size: 18px;
-                }
-                .homeTitle{
-                    font-size: 45px;
-                }
-                .btns{
-                    margin-top: 1rem;
-                }
-            }
+      }
+      .btn:nth-child(1) {
+        background: var(--whiteColor);
+        color: var(--textColor);
+        font-weight: 800;
+        &:hover {
+          background: var(--primaryColor);
         }
-     }  
- }
-
- @media screen and (min-width:996px) {
-    .hone{
-        padding-top: 10\rem;
-        .secContainer{
-            gap: 3rem;
-            .homeText{
-                .homeSpan{
-                   font-size: 25px;
-                }
-                .homeTitle{
-                    font-size: 55px;
-                }
-                .btns{
-                    .btn{
-                        font-size: 16px;
-                        padding: 1rem 2rem;
-                    }
-                }
-            }
+      }
+      .btn:nth-child(2) {
+        &:hover {
+          background: white;
+          color: var(--textColor);
         }
-     }  
- }
+      }
+    }
+  }
+
+  .homeImage {
+    margin: auto;
+    .img {
+      width: 36rem;
+    }
+  }
+}
+
+//make it responsive and condition for desktop
+
+@media screen and (max-width: 720px) {
+  .home {
+    padding-top: 10rem;
+    .Container {
+      margin: 0 auto;
+      gap: 2rem;
+      .homeText {
+        .homeSpan {
+          font-size: 18px;
+        }
+        .homeTitle {
+          font-size: 45px;
+        }
+        .btns {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
